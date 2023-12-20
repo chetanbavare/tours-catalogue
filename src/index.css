@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,4 +16,128 @@
     to {
         transform: rotate(1turn);
     }
+=======
+/* write your css here */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading
+{
+    font-size: 3rem;
+    margin: 6vh;
+    border: 7px dashed rgb(1,17,160);
+    border-radius: 20px;
+    padding: 1vh 5vw;
+}
+
+.cards
+{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.card
+{
+    width: 400px;
+    height: max-content;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    /* justify-content: center; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px ;
+}
+
+.image
+{
+    width:380px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.tour_info
+{
+    margin: 20px 5px;
+}
+
+.tour_price
+{
+    color: green;
+    font-size: 1rem;
+}
+
+.tour_name
+{
+    font-size: 1rem;
+}
+
+.readmore
+{
+    color: blue;
+    cursor: pointer;
+}
+
+.btn-red
+{
+    margin-top: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 10px 80px;
+    /* background-color: black; */
+}
+
+.btn-red:hover
+{
+    color: white;
+    background-color: red;
+    transition: all 0.2s;
+}
+
+.noTours
+{
+    height: 100vh;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.noTours button
+{
+    /* border: 1px solid red; */
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px 80px;
+    border-radius: 2px;
+    border:none
+    
+>>>>>>> a0c9d8708fe36fa5780e6bd0fbec2adda250ba14
 }

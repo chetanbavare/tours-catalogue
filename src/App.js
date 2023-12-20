@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Filter from "./components/Filter";
@@ -52,6 +53,36 @@ const App = () => {
     </div>
     
   </div>
+=======
+import React, { useState } from "react";
+import Tours from "./components/Tours";
+import data from "./data";
+
+const App = () => {
+
+ const [tours, setTours] = useState(data);
+
+  function removeTour(id)
+  {
+    const newTours = tours.filter(tour => tour.id !== id); 
+    setTours(newTours) 
+  }
+
+  if(tours.length === 0)
+  {
+    return(
+      <div className="noTours">
+        <h2 className="tours_heading">No Tours Left</h2>
+        <button onClick={() => setTours(data)}>Refresh</button>
+      </div>
+    )
+  }
+
+  return (
+    <div>
+      <Tours tours = {tours} removeTour={removeTour}></Tours>
+    </div>
+>>>>>>> a0c9d8708fe36fa5780e6bd0fbec2adda250ba14
   )
 };
 
